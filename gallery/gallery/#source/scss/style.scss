@@ -1,0 +1,75 @@
+@import "_nullstyle.scss";
+/* Global */
+$color-main: #2f3640;
+$color-lite: #7f8fa6;
+$color-black: black;
+%tplabout {
+	font-style: italic;
+	font-size: 19px;
+	font-family: "Cabin", sans-serif;
+}
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap");
+$font-text: "Cabin", sans-serif;
+$font-header: "Roboto", sans-serif;
+body {
+	margin: 0 auto;
+	text-align: center;
+}
+.gallery {
+	h2 {
+		font-size: 25px;
+		margin: 0 0 60px 0;
+		font-weight: bold;
+		position: relative;
+	}
+	h2::after {
+		content: "";
+		position: absolute;
+		bottom: -25px;
+		left: 50%;
+		width: 100px;
+		height: 7px;
+		transform: translateX(-50%);
+		background: $color-main;
+	}
+}
+
+.photo {
+	height: 350px;
+	position: relative;
+}
+.photo div {
+	img {
+		float: left;
+		width: 33.333%;
+		height: 350px;
+		object-fit: cover;
+	}
+}
+.content-button {
+	margin: 50px 0 100px 0;
+	height: 50px;
+	width: 110px;
+	background: $color-main;
+	color: white;
+	font-family: $font-text;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+}
+.photo button {
+	margin: 0 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.photo div:nth-child(2):hover button {
+	display: block;
+}
+.photo div:nth-child(2):hover img {
+	opacity: 0.8;
+}

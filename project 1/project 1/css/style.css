@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/* *, *::before, *::after {
+	box-sizing: border-box;
+} */
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/* Global */
+.intro p, .about p {
+  font-style: italic;
+  font-size: 19px;
+  font-family: 'Cabin', sans-serif;
+}
+
+/* Fonts */
+body {
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.7;
+  min-width: 930px;
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  padding: 108px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background: url(https://gagadget.com/media/post_big/DEATH_STRANDING_20191109120244.jpg) center/cover;
+  font-size: 30px;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.splash i {
+  color: white;
+  font-size: 70px;
+  background: #2f3640;
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 25px;
+}
+
+.splash .page-title {
+  font-size: 60px;
+  margin: 30px 0 0 0;
+  font-weight: 800;
+}
+
+.splash .page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  width: 200px;
+  height: 7px;
+  transform: translateX(-50%);
+  background: #2f3640;
+}
+
+.splash .page-subtitle {
+  font-size: 26px;
+  margin: 20px 0 0 0;
+  font-weight: 700;
+}
+
+/* Intro */
+.intro p {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* About */
+.about {
+  background: #7f8fa6;
+}
+
+.about .section-title {
+  position: relative;
+  font-size: 24px;
+  margin: 0 0 45px 0;
+  font-weight: bold;
+}
+
+.about .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 100px;
+  height: 7px;
+  transform: translateX(-50%);
+  background: #2f3640;
+}
+
+.about p {
+  margin: 20px 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Skills */
+[class^="skill-"] {
+  position: relative;
+}
+
+.skills {
+  max-width: 930px;
+  min-width: 930px;
+  margin: 0 auto;
+}
+
+[class^="skill-image_"] {
+  width: 50%;
+  height: 250px;
+  z-index: 2;
+  position: absolute;
+}
+
+[class^="skill-image_"]:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 3;
+}
+
+.skill-image_one {
+  background: url(https://3.bp.blogspot.com/-g93SEwB6qzQ/XPE36pD2vGI/AAAAAAAAGqk/o7pxF1DWjekYIM2sjM8Mu-jCkB36igkFwCKgBGAs/w0/death-stranding-uhdpaper.com-4K-9.jpg) 0 0/contain no-repeat;
+}
+
+.skill-image_two {
+  background: url(https://wallpapercave.com/wp/wp4397505.png) 0 0/contain no-repeat;
+  right: 0;
+}
+
+.skill-image_three {
+  background: url(https://cdn2.unrealengine.com/ds-keyart-1920x1080-nologo-1920x1080-363363968.jpg) 0 0/contain no-repeat;
+}
+
+.skill-image_three:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 3;
+}
+
+.skill-right .skill-image {
+  right: 0;
+}
+
+.skill-right .skill-description {
+  padding: 35px 52% 36px 0;
+  text-align: right;
+}
+
+.skill-left .skill-description {
+  padding: 35px 0 36px 52%;
+  text-align: left;
+  z-index: 1;
+}
+
+.container-title {
+  font-size: 25px;
+  margin: 0 0 60px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.container-title::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 100px;
+  height: 7px;
+  transform: translateX(-50%);
+  background: #2f3640;
+}
+
+.skill-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skill-text {
+  font-family: "Cabin", sans-serif;
+}
+
+/* Glallery */
+.gallery h2 {
+  font-size: 25px;
+  margin: 0 0 60px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.gallery h2::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 100px;
+  height: 7px;
+  transform: translateX(-50%);
+  background: #2f3640;
+}
+
+.gallery-img {
+  position: relative;
+}
+
+.gallery-img :nth-child(n+1) {
+  float: left;
+  width: 33.3333%;
+  height: 350px;
+}
+
+.gallery-img .gallery-img::before,
+.gallery-img .gallery-img::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.gallery-img :nth-child(1) {
+  background: url(https://c4.wallpaperflare.com/wallpaper/460/576/917/screenshot-death-stranding-4k-e3-2018-wallpaper-preview.jpg) center no-repeat;
+}
+
+.gallery-img :nth-child(2) {
+  background: url(https://c4.wallpaperflare.com/wallpaper/760/397/128/death-stranding-mads-mikkelsen-hideo-kojima-kojima-productions-wallpaper-preview.jpg) center no-repeat;
+}
+
+.gallery-img :nth-child(3) {
+  background: url(https://s20.postimg.cc/xgjbj8v4t/stranding.jpg) center no-repeat;
+}
+
+.gallery-img :nth-child(4) {
+  background: url(https://twinfinite.net/wp-content/uploads/2019/10/Screen-Shot-2019-10-18-at-11.35.27-AM.jpg) center no-repeat;
+}
+
+.gallery-img :nth-child(5) {
+  background: url(https://wallpaperforu.com/wp-content/uploads/2020/10/video-game-wallpaper-20100520181163800x600.jpg) right no-repeat;
+}
+
+.gallery-img :nth-child(6) {
+  background: url(https://cutewallpaper.org/21/death-stranding-wallpaper-1920x1080/Wallpaper-Death-Stranding-Video-Game-Art-poster-.jpg) center no-repeat;
+}
+
+.content-button {
+  margin: 50px 0 100px 0;
+  height: 50px;
+  width: 110px;
+  background: #2f3640;
+  color: white;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Contact */
+.name, .email, .subject, .textarea {
+  height: 30px;
+  width: 230px;
+  border: 1px solid #000;
+  font-size: 14px;
+  font-family: 'Cabin', sans-serif;
+  padding: 0 0 0 5px;
+  margin: 5px 0;
+}
+
+.contact {
+  background: #2f3640;
+  height: 700px;
+}
+
+.contact h2 {
+  color: #fff;
+  padding: 70px 0 60px 0;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+.contact h2::after {
+  content: '';
+  position: absolute;
+  bottom: 29px;
+  left: 50%;
+  width: 100px;
+  height: 7px;
+  transform: translateX(-50%);
+  background: #fff;
+}
+
+.contact .content-button {
+  background: #7f8fa6;
+  width: 90px;
+}
+
+.textarea {
+  height: 200px;
+}
+
+.page-footer {
+  background: #1a1f27;
+}
+
+.page-footer .container p {
+  font-size: 13px;
+  color: #fff;
+}
